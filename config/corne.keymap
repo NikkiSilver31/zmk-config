@@ -109,10 +109,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q        &kp W        &kp E                 &kp R          &kp T      &kp Y      &kp U          &kp I         &kp O        &kp P     &none
+&none  &kp Q        &kp W        &kp E                 &kp R          &kp T      &kp Y      &kp U          &kp I         &kp O        &kp P     &to 4
 &none  &hml LGUI A  &hml LALT S  &hml LCTRL D          &hml LSHIFT F  &kp G      &kp H      &hmr RSHIFT J  &hmr RCTRL K  &hmr RALT L  &td0      &to 3
 &none  &kp Z        &kp X        &kp C                 &kp V          &kp B      &kp N      &kp M          &kp COMMA     &kp DOT      &kp FSLH  &kp RG(SPACE)
-                                 &mt (LEFT_GUI) LG(Q)  &to 2          &kp RET    &kp SPACE  &kp DELETE     &to 1
+                                 &mt (LEFT_GUI) LG(Q)  &to 2          &kp RET    &kp SPACE  &mt CLEAR DEL  &to 1
             >;
         };
 
@@ -130,7 +130,7 @@
 &none  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none
 &none  &kp GRAVE  &kp TILDE  &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &none
 &none  &kp TILDE  &none      &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &none
-                             &trans    &to 0     &trans       &trans     &trans     &to 0
+                             &trans    &to 4     &trans       &trans     &trans     &to 0
             >;
         };
 
@@ -145,10 +145,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans             &trans              &trans          &mkp MB4      &trans          &trans           &trans    &trans
-&trans  &trans  &trans  &kp RG(O)  &kp RG(N)          &trans              &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &to 0
-&trans  &trans  &trans  &trans     &trans             &trans              &trans          &trans        &trans          &trans           &trans    &trans
-                        &trans     &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN    &mkp LCLK       &mkp MCLK     &mkp RCLK
+&trans  &trans  &trans         &trans     &trans             &trans              &trans          &mkp MB4      &trans          &trans           &trans    &trans
+&trans  &trans  &kp K_REFRESH  &kp RG(O)  &kp RG(N)          &trans              &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &to 0
+&trans  &trans  &trans         &trans     &trans             &trans              &trans          &trans        &trans          &trans           &trans    &trans
+                               &trans     &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN    &mkp LCLK       &mkp MCLK     &mkp RCLK
             >;
         };
 
