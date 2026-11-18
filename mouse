@@ -1,0 +1,20 @@
+CONFIG_ZMK_POINTING=y
+#include <dt-bindings/zmk/pointing.h>
+&mkp LCLK
+&mkp MB4
+&mmv MOVE_DOWN
+&mmv MOVE_LEFT
+&msc SCRL_DOWN
+&msc SCRL_LEFT
+&mmv {
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
+};
+&msc {
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <0>;
+};
